@@ -4,11 +4,6 @@
   <title>Abinash Gautam</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    if (window.location.pathname.endsWith('/index.html')) {
-        history.replaceState({}, document.title, window.location.pathname.replace('/index.html', '/home'));
-    }
-</script>
   <!-- linking css file -->
   <link rel="stylesheet" href="index_style.css">
   <!-- bootstrap CDN -->
@@ -313,11 +308,11 @@
                         <input type="hidden" name="access_key" value="0fabca7d-8bf7-4b89-bb67-8595c94d5669">
                         <h3>Your Details</h3>
                         
-                        <input type="text" id="-name" name="text"  placeholder="Name" required>
-                        <input type="email" id="email" name="email" placeholder="Email"required>
-                        <input type="text" id="phone" name="text"  placeholder="Phone"required>
-                        <input type="text" id="subject" name="text"  placeholder="Subject"required>
-                        <textarea id="message" rows="5" name="text" placeholder="Project Details"></textarea>
+                        <input type="text" id="message" name="Name"  placeholder="Name" required>
+                        <input type="email" id="message" name="email" placeholder="Email"required>
+                        <input type="text" id="message" name="Phone"  placeholder="Phone"required>
+                        <input type="text" id="message" name="Subject"  placeholder="Subject"required>
+                        <textarea id="message" rows="5" name="Project Details" placeholder="Project Details"></textarea>
                         <div class="h-captcha" data-captcha="true"></div>
                         <button type="submit">Submit</button>
                     </form>
@@ -339,10 +334,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- load javascript after loading all html content -->
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/script/script.js"></script>-->
 </body>
 </html>
 
