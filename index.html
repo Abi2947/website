@@ -1,317 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Utsab Gautam</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="index_style.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="/image/1.png" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utsab Gautam</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index_style.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="images/logo.ico" alt="Logo" />
+        <a href="#Engineer" class="name">UTSAB GAUTAM</a>
+      </div>
 
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="/image/1.png"><img src="/image/1.png" alt="Logo" class="logo" style="width: 50px; height: 50px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
+      <!-- Hamburger Icon -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <!-- <li><a href="#experience">EXPERIENCE</a></li> -->
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
     </nav>
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Hi, it's me Utsab</h2>
-                <p class="hero_desc">I am a Computer engineer who lives in Kathmandu</p>
-               <h4> <p class=" hero_text">Hello! I'm a passionate computer engineer graduate from Sagarmatha Engineering College, affiliated with Tribhuvan University. <br> journey in the world of technology began with a deep curiosity about how things work, which led me to pursue a Bachelor's degree in Computer Engineering. </p>
-               </h4>
-            </div>
-            </div>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="Engineer" class="hero-section">
+      <div class="hero-text">
+        <p class="intro">Hello !!!</p>
+        <h1>I'm <span class="highlight">Utsab Gautam</span></h1>
+        <h2 class="animated-subtitle">Computer Engineer</h2>
+        <p class="desc">
+          Hello! I'm a passionate computer engineer graduate from Sagarmatha
+          Engineering College, affiliated with Tribhuvan University. My journey
+          in the world of technology began with a deep curiosity about how
+          things work, which led me to pursue a Bachelor's degree in Computer
+          Engineering.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="images/img1.png" alt="Utsab Gautam" />
+      </div>
+    </section>
+
+    <!-- ===== About Me Section ===== -->
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/img2.png" alt="Utsab Gautam" />
         </div>
-    </section>
-
-    <!-- about section -->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="image/1.jpg" class= "imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <p> 
-                        Hi there! My name is Utsab Gautam and I'm passionate about traveling, Extreme Sports, Exploration, Cultural Immersion, Solo Travel, Exploratory Learning and my field of experties are Machine Learning, AI development, Backend development using node.js, Database Engineering . I have worked on various projects ranging from simple project on creating a recommendation system to working in a complex project of "Nepali Hand Sign Recognition System".
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: Utsab Gautam</li>
-                                <li>Age: 24</li>
-                                <li>Occupation: Web Developer, Machine learning, AI developer, Backend Developer</li>
-
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    <div class="row mt-3">
-                        <p> Hello! I'm a passionate computer engineer graduate from Sagarmatha Engineering College, affiliated with Tribhuvan University. My journey in the world of technology began with a deep curiosity about how things work, which led me to pursue a Bachelor's degree in Computer Engineering. Throughout my academic journey, I've gained valuable knowledge and skills in various aspects of computer science, from software development to hardware design.</p>
-
-                        <p>Beyond the classroom, I thrive on exploration and adventure. I find joy in visiting new places, immersing myself in different cultures, and discovering hidden gems. Whether it's a spontaneous road trip or a planned hiking expedition, I'm always up for an adventure. Additionally, I have a penchant for thrilling night outs, where I get to experience the vibrant energy of the city and create unforgettable memories with friends.</p>
-                            
-                        <p>Sports and outdoor activities are an integral part of my life. I'm an avid sports enthusiast and enjoy playing football, futsal, cricket, and table tennis. The thrill of competition and the camaraderie of teamwork fuel my passion for these games. Playing sports not only keeps me physically active but also teaches me valuable lessons in leadership, perseverance, and sportsmanship.</p>
-                            
-                        <p>In addition to my academic and extracurricular pursuits, I'm deeply committed to personal growth and continuous learning. I believe in the power of education to transform lives and make a positive impact on society. As I embark on the next chapter of my journey, I'm excited to apply my knowledge, skills, and passion to contribute meaningfully to the ever-evolving field of technology.</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-
-    
-    <!-- services section-->
-    <section id="services">
-        <div class="container">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Welcome! I specialize in creating custom websites that combine stunning design with seamless functionality. 
-                                With expertise in front-end and back-end development, 
-                                I craft responsive, user-friendly sites tailored to your unique needs. 
-                                Let's collaborate to bring your vision to life! 
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">With a focus on aesthetics, usability, and brand identity, 
-                                I strive to craft designs that not only look beautiful but also engage and inspire visitors. 
-                                Whether you're a small business, a startup, or a creative professional, 
-                                I can help you establish a strong online presence that reflects your unique personality and goals.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Backend Developer</h4>
-                            <p class="card-text mt-3">As a backend developer, I specialize in building the foundation of websites and web applications, 
-                                focusing on server-side logic and database management.
-                                With expertise in programming languages like Python, Node.js, and PHP,
-                                I develop robust and scalable backend that power the functionality of digital products.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">AI Engineer</h4>
-                            <p class="card-text mt-3">As an AI engineer, I specialize in developing cutting-edge solutions that harness the power of artificial intelligence to tackle complex challenges. 
-                                From building machine learning models to deploying scalable AI systems, I leverage innovative technologies to drive efficiency, automation, and intelligence across various domains.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">Machine Learning</h4>
-                            <p class="card-text mt-3">As a machine learning enthusiast, 
-                                I specialize in creating intelligent systems that learn from data and make predictions or decisions. 
-                                Leveraging algorithms such as neural networks, decision trees, and support vector machines, 
-                                I develop models to solve diverse problems ranging from image recognition to natural language processing.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+        <div class="about-text">
+          <h2>MY BIOGRAPHY</h2>
+          <hr class="bio-line" />
+          <p>
+            Hi there! My name is Utsab Gautam and I'm passionate about
+            traveling, Extreme Sports, Exploration, Cultural Immersion, Solo
+            Travel, Exploratory Learning and my field of expertise are Machine
+            Learning, AI development, Backend development using node.js,
+            Database Engineering. I have worked on various projects ranging from
+            simple project on creating a recommendation system to working in a
+            complex project of "Nepali Hand Sign Recognition System".
+          </p>
         </div>
-    </section>
-
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="image/AI_ Chess.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Chess bot</h4>
-                            <p class="card-text">Crafted a cutting-edge chess bot project integrating advanced algorithms and AI methodologies, showcasing my proficiency in artificial intelligence and strategic problem-solving.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/Abi2947/Game_bot" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="image/movie.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Movie recommendation System</h4>
-                            <p class="card-text">Designed and implemented a personalized movie recommendation system utilizing collaborative filtering and machine learning algorithms to deliver tailored movie suggestions based on user preferences and viewing history.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/Abi2947/Moviecon_AI/tree/master" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="image/Farmer woking in rice field_ Tamil Nadu,.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Farmers work</h4>
-                            <p class="card-text">Farmers Work: An innovative app offering rental services for plots, machinery, and equipment while providing timely pesticide arrival notifications, streamlining farming operations and fostering agricultural efficiency.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/Abi2947/Agro_service" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="image/NSL.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Nepali Hand Sign Recognition</h4>
-                            <p class="card-text">Developed a Nepali hand sign recognition system leveraging computer vision and deep learning techniques to interpret and facilitate communication for the hearing impaired, enhancing accessibility and inclusivity in Nepali society.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/Abi2947/major_model/tree/avi" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="image/knowledge graph.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Knowledge Graph</h4>
-                            <p class="card-text">Created a comprehensive knowledge graph system, organizing vast amounts of interconnected information into a structured format, facilitating efficient data retrieval and analysis across diverse domains.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/Abi2947/Knowledge_Graph" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="image/site generator.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Site Generator</h4>
-                            <p class="card-text">Ulkas: A dynamic website generator written in JavaScript, empowering users to effortlessly create and customize websites with intuitive features and flexible design options.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/Abi2947/ulka" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embed-map-display" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Kathmandu,+Nepal&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="embed-ded-maphtml" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="enable-maps-data">premium bootstrap themes</a>
-                        <style>#embed-map-display img{max-height:none;max-width:none!important;background:none!important;}
-                        </style>
-                    </div>
-                </div> 
-
-                <div class="col-lg-6">
-                    <!-- form fields -->
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="0fabca7d-8bf7-4b89-bb67-8595c94d5669">
-                        <h3>Your Details</h3>
-                        
-                        <input type="text" id="message" name="Name"  placeholder="Name" required>
-                        <input type="email" id="message" name="email" placeholder="Email"required>
-                        <input type="text" id="message" name="Phone"  placeholder="Phone"required>
-                        <input type="text" id="message" name="Subject"  placeholder="Subject"required>
-                        <textarea id="message" rows="5" name="Project Details" placeholder="Project Details"></textarea>
-                        <div class="h-captcha" data-captcha="true"></div>
-                        <button type="submit">Submit</button>
-                    </form>
-                    <p><a href="https://www.linkedin.com/in/Utsab-gautam-6b88b019a/"><img src="/image/linkedin.png" alt="Icon" style="width: 50px; height: 50px;"></a>
-                        <a href="https://www.facebook.com/Utsab.gautam.1000"><img src="/image/FB_icon.png" alt="Icon" style="width: 50px; height: 50px;"></a>
-                        <a href="https://github.com/Abi2947"><img src="/image/github.png" alt="Icon" style="width: 50px; height: 50px;"></a>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="/image/mail.png" alt="Icon" style="width: 40px; height: 40px;"></a></p>
-                        <p><img src="/image/phone.png" alt="Icon" style="width: 40px; height: 40px;">+9779864410250</p>                    
-                </div>
-            </div>
+      </div>
+      <div class="skills-interest">
+        <h3>Skill & Interest</h3>
+        <div class="skill-buttons">
+          <button class="skill-btn">WEB DEVELOPER</button>
+          <button class="skill-btn">BACKEND DEVELOPER</button>
+          <button class="skill-btn">PHOTOGRAPHY</button>
+          <button class="skill-btn">MACHINE LEARNING</button>
         </div>
+      </div>
     </section>
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <p>&copy; Utsab Gautam</p>
-            </div>
+
+    <!-- ===== Divider ===== -->
+    <div class="section-divider"></div>
+
+    <!-- ===== Education Section ===== -->
+    <section id="education" class="education-section">
+      <h2 class="year-range">2017 - 2024</h2>
+      <h1 class="section-title">EDUCATION</h1>
+      <div class="education-content">
+        <p class="education-desc">
+          Hello! I'm a passionate computer engineer graduate from Sagarmatha
+          Engineering College, affiliated with Tribhuvan University. My journey
+          in the world of technology began with a deep curiosity about how
+          things work, which led me to pursue a Bachelor's degree in Computer
+          Engineering. Throughout my academic journey, I've gained valuable
+          knowledge and skills in various aspects of computer science, from
+          software development to hardware design.
+        </p>
+        <div class="education-details">
+          <h3>High School Degree (10 +2)</h3>
+          <p>
+            Paramount Boarding Higher Secondary School | Science | 2017-2019
+          </p>
+          <h3>Bachelor Degree</h3>
+          <p>
+            Tribhuvan University | Computer Engineering Bachelor | 2019-2024
+          </p>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== Divider between Education and Projects ===== -->
+    <div class="section-divider"></div>
+
+    <!-- ===== Projects Section ===== -->
+    <section id="projects" class="projects-section">
+      <h2 class="year-range">2022 - 2024</h2>
+      <h1 class="project-section-title">PROJECTS</h1>
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <img
+            src="images/farmer.png"
+            alt="Farmers Work"
+            class="project-image"
+          />
+          <h3>1. Farmers Work | 2023</h3>
+          <p>
+            Farmers Work: An innovative app offering rental services for plots,
+            machinery, and equipment while providing timely pesticide arrival
+            notifications, streamlining farming operations and fostering
+            agricultural efficiency.
+          </p>
+          <a
+            href="https://example.com/project1"
+            target="_blank"
+            class="project-link"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card fade-in">
+          <img
+            src="images/NSL.png"
+            alt="Nepali Hand Sign Language"
+            class="project-image"
+          />
+          <h3>2. Nepali Hand Sign Language | 2024</h3>
+          <p>
+            Developed a Nepali hand sign recognition system leveraging computer
+            vision and deep learning techniques to interpret and facilitate
+            communication for the hearing impaired, enhancing accessibility and
+            inclusivity in Nepali society
+          </p>
+          <a
+            href="https://example.com/project2"
+            target="_blank"
+            class="project-link"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card fade-in">
+          <img src="images/chess.png" alt="Chess Bot" class="project-image" />
+          <h3>3. Chess Bot | 2022</h3>
+          <p>
+            Crafted a cutting-edge chess bot project integrating advanced
+            algorithms and AI methodologies, showcasing my proficiency in
+            artificial intelligence and strategic problem-solving.
+          </p>
+          <a
+            href="https://example.com/project3"
+            target="_blank"
+            class="project-link"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card fade-in">
+          <img
+            src="images/site.png"
+            alt="Site Generator"
+            class="project-image"
+          />
+          <h3>4. Site Generator | 2023</h3>
+          <p>
+            Ulkas: A dynamic website generator written in JavaScript, empowering
+            users to effortlessly create and customize websites with intuitive
+            features and flexible design options.
+          </p>
+          <a
+            href="https://example.com/project4"
+            target="_blank"
+            class="project-link"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card fade-in">
+          <img
+            src="images/graph.png"
+            alt="Knowledge Graph"
+            class="project-image"
+          />
+          <h3>5. Knowledge Graph | 2023</h3>
+          <p>
+            Created a comprehensive knowledge graph system, organizing vast
+            amounts of interconnected information into a structured format,
+            facilitating efficient data retrieval and analysis across diverse
+            domains.
+          </p>
+          <a
+            href="https://example.com/project5"
+            target="_blank"
+            class="project-link"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card fade-in">
+          <img
+            src="images/blog.jpg"
+            alt="Blog Management"
+            class="project-image"
+          />
+          <h3>6. Blog Management | 2025</h3>
+          <p>
+            Created a comprehensive Blog Management system, organizing vast
+            amounts of interconnected information into a structured format,
+            facilitating efficient storing all users and blog data on database
+            and CURD operations diverse domains.
+          </p>
+          <a
+            href="https://example.com/project6"
+            target="_blank"
+            class="project-link"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="contact-section">
+      <h1 class="contact-title">GET IN TOUCH</h1>
+      <p class="subtitle typing">Let's Work Together</p>
+      <div class="contact-container">
+        <div class="contact-card fade-in">
+          <i class="fas fa-phone fa-2x"></i>
+          <h3>Phone & Mobile</h3>
+          <p>+977 9864410250</p>
+        </div>
+        <div class="contact-card fade-in">
+          <i class="fas fa-envelope fa-2x"></i>
+          <h3>Email & Website</h3>
+          <p>
+            <a href="mailto:utsabgautam47@gmail.com">utsabgautam47@gmail.com</a>
+          </p>
+          <p>
+            <a href="https://utsabgautam.com.np" target="_blank"
+              >utsabgautam.com.np</a
+            >
+          </p>
+        </div>
+        <div class="contact-card fade-in">
+          <i class="fas fa-map-marker-alt fa-2x"></i>
+          <h3>Address</h3>
+          <p>Kalanki, Kathmandu</p>
+        </div>
+        <div class="contact-card fade-in">
+          <i class="fab fa-linkedin fa-2x"></i>
+          <h3>LinkedIn</h3>
+          <p>
+            <a href="https://www.linkedin.com/in/utsab-gautam/" target="_blank"
+              >linkedin.com/utsab-gautam/</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="marquee">
+        <p>
+          Computer Engineer — Software Developer — Backend Developer — Machine
+          Learning
+        </p>
+      </div>
     </footer>
-</body>
-</html>
 
+    <!-- ===== JS for scroll & animations ===== -->
+    <script src="script/script.js"></script>
+  </body>
+</html>

@@ -1,55 +1,54 @@
-const form = document.querySelector ('form');
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
 
-function sendEmail() {
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "aabinashgautam29@gmail.com",
-        Password : "utsab29gautam",
-        To : 'utsabgautam47@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "New Project detail",
-        Body : "Name: " + document.getElementById("-name").value + 
-        "\n\nEmail: "+ document.getElementById("email").value+
-        "\n\nPhone: "+document.getElementById("phone").value+
-        "\n\nSubject:\n"+document.getElementById("subject").value+
-        "\n\nMessage: \n"+document.getElementById("message").value
-    }).then(
-    message => alert("Message Sent Succesfully")
-    );
-}
+// Entry animations (for .fade-in elements)
+const faders = document.querySelectorAll(".fade-in");
+const appearOptions = { threshold: 0.3, rootMargin: "0px 0px -50px 0px" };
+const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("appear");
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+faders.forEach((fader) => appearOnScroll.observe(fader));
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
-  result.innerHTML = "Please wait..."
+// Animation restart for sections (Hero, About Me, Education, Projects)
+const sections = document.querySelectorAll(
+  ".hero-section, .about-section, .education-section, .projects-section"
+);
 
-    fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            let json = await response.json();
-            if (response.status == 200) {
-                result.innerHTML = json.message;
-            } else {
-                console.log(response);
-                result.innerHTML = json.message;
-            }
-        })
-        .catch(error => {
-            console.log(error);
-            result.innerHTML = "Something went wrong!";
-        })
-        .then(function() {
-            form.reset();
-            setTimeout(() => {
-                result.style.display = "none";
-            }, 3000);
-        });
+const sectionObserverOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+};
+
+const sectionObserver = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+    } else {
+      entry.target.classList.remove("animate");
+    }
+  });
+}, sectionObserverOptions);
+
+sections.forEach((section) => {
+  sectionObserver.observe(section);
+});
+
+// ===== Hamburger Menu Toggle =====
+const hamburger = document.querySelector(".hamburger");
+const nav_links = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  nav_links.classList.toggle("active");
+  hamburger.classList.toggle("active");
 });
