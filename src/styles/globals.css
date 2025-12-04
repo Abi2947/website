@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Default Typography */
+h1 {
+  @apply text-5xl md:text-7xl font-bold;
+}
+
+h2 {
+  @apply text-3xl md:text-5xl font-bold;
+}
+
+h3 {
+  @apply text-xl md:text-2xl font-semibold;
+}
+
+p {
+  @apply text-base;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(2 6 23);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(51 65 85);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(71 85 105);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body Styles */
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+/* Selection Color */
+::selection {
+  @apply bg-cyan-500/30 text-cyan-100;
+}
